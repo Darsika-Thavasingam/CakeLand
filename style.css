@@ -7,12 +7,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: bisque;
     padding: 20px;
+    border-radius: 10px;
 }
 body{
+    background-image: url('img/bg1.jpg');
     padding: 15px;
-    background-color:white;
+    background-color:azure;
     background-size: cover;
 }
 .aboutus{
@@ -34,7 +36,7 @@ body{
     margin: 20px;
     max-width: 500px;
     padding: 30px ;
-    background: rgba(191, 188, 190, 0.5);
+    background: rgba(153, 147, 147, 0.5);
     color: white;
     max-width: 20%;
     border-radius: 10px;
@@ -42,7 +44,7 @@ body{
 
 .logo h1{ 
     font-size: 70px;
-    color: rgb(73, 174, 30);
+    color: purple;
     font-weight: bold;
 }
 .navbar{
@@ -51,10 +53,10 @@ body{
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(17, 4, 4, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 .navbar:hover{
-    background-color: rgb(177, 247, 147);
+    background-color: rgb(243, 185, 243);
     color: white;
     
 }
@@ -71,11 +73,9 @@ body{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: rgb(27, 50, 9);
+    color: purple;
 }
-.navbar ul li a:hover {
-    color: rgb(248, 239, 239);
-}
+
 
 li:hover{
     color:white;
@@ -110,15 +110,15 @@ input{
     transition: background-color 0.3s;
 }
 .searchbar button:hover{
-    background-color: white;
-    color: blueviolet;
+    background-color: beige;
+    
 }
 
 
 button{
     font-size: large;
-    color: rgb(222, 61, 222);
-    background-color: white;
+    color: blueviolet;
+    background-color: bisque;
     border: 1px purple solid ;
     padding: 4px;
     margin-left: 70px;
@@ -127,8 +127,8 @@ button{
     transition: background-color 0.3s;
  }
  button:hover{
-    color: white;
-    background-color: rgb(228, 50, 180);
+
+    background-color:white;
  }
 .cake{
     
@@ -157,7 +157,7 @@ img{
     margin-top: 20px;
 }
 .categoriesbar{
-    background-color: white;
+    background-color: bisque;
     padding: 15px;
     margin: 40px ;
     display: flex;
@@ -219,8 +219,8 @@ img{
 
  
  .s:hover, .c:hover, .r:hover, .v:hover{
-    color: white;
-    background-color: rgb(247, 207, 247);
+    
+    background-color: bisque;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
  }
@@ -312,6 +312,7 @@ img{
         font-size: 1.5rem;
         margin: 10px;
         padding: 8px;
+        background-color: black;
     }
 
  
