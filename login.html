@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <style>
+            .log-in{
+            background-color: lavender;
+            font-size:x-large;
+            text-align: center;
+            padding: 40px;
+            margin: 150px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 2px, 2px, 10px, gray;
+            }
+            body{
+            display: flex;
+            align-items: center;
+            background-color:azure;
+            font-family: serif;
+            text-align: center;
+            justify-content: center;
+            }
+            td{
+            padding: 10px;
+            }
+            input[type="text"],input[type="password"]{
+            width: 100%;
+            padding: 8px;
+            font-size: large;
+            
+            }
+            .in{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            input[type="submit"]{
+            display: flex;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            width:100px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: large;
+            
+            }
+            table{
+            width: 100%;
+            }
+            a{
+            color: blue;
+            font-size: large;
+            display: block;
+            text-align: center;
+            margin: 10px;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div class="log-in">
+            <form action="login_backend.php" method="POST">
+            <form>
+                <table>
+                    <tr>
+                        <td>User name </td>
+                        <td> <input type="text" name="user_name" placeholder="Enter your name" required></td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td> <input type="password" name="password" placeholder="Enter your password" required> </td>
+                    </tr>
+                <table>
+                
+                <div class="in">
+                    <input type="submit" value="log_in">
+                </div>
+                <a href="signup.html">create an account</a>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

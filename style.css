@@ -1,0 +1,329 @@
+*{
+   
+    padding: 0;
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: bisque;
+    padding: 20px;
+}
+body{
+    background-image: url('img/bg1.jpg');
+    padding: 15px;
+    background-color:azure;
+    background-size: cover;
+}
+.aboutus{
+    background-image: url('img/cake.jpg') ;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    color: white;
+    padding: 0 10px;
+    position: relative;
+}
+
+.about p{
+    margin: 20px;
+    max-width: 500px;
+    padding: 30px ;
+    background: rgba(153, 147, 147, 0.5);
+    color: white;
+    max-width: 20%;
+    border-radius: 10px;
+}
+
+.logo h1{ 
+    font-size: 70px;
+    color: purple;
+    font-weight: bold;
+}
+.navbar{
+    background-color: silver;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar ul{ 
+    list-style: none;
+    display: flex;
+   
+}
+.navbar ul li{ 
+   margin: 0 15px;
+   
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+}
+.navbar ul li a:hover {
+    color: darkred;
+}
+
+li:hover{
+    color:white;
+}
+
+.searchbar{
+    
+    display: flex;
+    align-items: center;
+}
+.searchbar input{
+    padding: 5px;
+    width: 300px;
+    border: 1px solid  lightgrey;
+    border-radius: 5px;
+}
+input{
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    border: solid lightblue 3px;
+}
+ 
+.searchbar button{
+    background-color: white;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.searchbar button:hover{
+    background-color: beige;
+}
+
+
+button{
+    font-size: large;
+    color: blueviolet;
+    background-color: bisque;
+    border: 1px purple solid ;
+    padding: 4px;
+    margin-left: 70px;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+ }
+ button:hover{
+    background-color: white;
+ }
+.cake{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:20px;
+    align-items: center;
+}
+
+
+img{
+    padding: 10px;
+    margin: 10px;
+    height: 180px;
+    width: 180px;
+    max-width: 100%;
+}
+.contact{
+    font-size: x-large;
+    height: 250px;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.categoriesbar{
+    background-color: bisque;
+    padding: 15px;
+    margin: 40px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+   
+
+}
+.categoriesbar ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+.categoriesbar ul li{
+    margin-right: 20px;
+   
+}
+.categoriesbar ul li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+    padding: 10px;
+    transition: color 0.3s;
+}
+.categoriesbar ul li a:hover{
+    color: darkred;
+}
+.c, .v, .s, .r{
+    display: inline-block;
+    height: 330px;
+    width: 250px;
+    padding: 10px ;
+    margin: 10px 10px 10px 60px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.instagram, .facebook{
+   display: inline-block;
+   transition: background-color 0.3s, color 0.3s;
+}
+.instagram:hover, .facebook:hover{
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20px;
+}
+
+ .contact h2{
+    display: inline-block;
+    text-align: center;
+ }
+ p{
+    font-size:large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: purple;
+ }
+
+ .v:hover{
+    background-color: bisque;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+ }
+ .c:hover{
+    background-color: bisque;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+ }
+ .s:hover{
+    background-color: bisque;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+ }
+ .r:hover{
+    background-color: bisque;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+ }
+ 
+ @media screen and (max-width:600px){
+    .header{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .navbar ul li{
+        margin: 10px 0;
+    }
+    .navbar ul li a {
+        font-size: 18px;
+    }
+    .logo h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 1rem;
+    }
+
+    .cake{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .c, .v, .r, .s {
+        width: 50%;
+        text-align: center;
+        margin: 10px 0;
+    } 
+    .searchbar{
+        width: 100%;
+        text-align: center;
+    }
+    .searchbar input{
+        width: 80%;
+        margin: 15px 0;
+    }
+    .cake img {
+        width: 40%;
+        height: auto;
+    }
+
+    .contact h2{
+        font-size: 1.5rem;
+    }
+    .contact{
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+    .aboutus{
+
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    }   
+    .about p{
+        margin: 20px;
+        max-width: 80%;
+        padding: 20px;
+    }
+    button, .searchbar button {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-left: 0;
+    }
+    .categoriesbar{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 20px;
+    }
+    .categoriesbar ul{
+    flex-direction: column;
+    align-items: center;
+    }
+    .categoriesbar ul li{
+        margin: 10px 0;
+    }
+    .instagram, .facebook{
+        font-size: 1.5rem;
+        margin: 10px;
+        padding: 8px;
+    }
+
+ 
+
+ }
+ 
+    
+ 

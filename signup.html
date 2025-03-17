@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            sign up
+        </title>
+        <style>
+.sign-up{
+    background-color: lavender;
+font-size:x-large;
+text-align: center;
+padding: 40px;
+margin: 150px;
+width: 500px;
+border-radius: 10px;
+box-shadow: 2px, 2px, 10px, gray;
+}
+body{
+display: flex;
+align-items: center;
+background-color:azure;
+font-family: serif;
+text-align: center;
+justify-content: center;
+}
+td{
+
+padding: 10px;
+}
+input[type="text"],input[type="password"]{
+width: 100%;
+padding: 8px;
+font-size: large;
+
+}
+.up{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+input[type="submit"]{
+display: flex;
+background-color: blue;
+color: white;
+padding: 10px;
+cursor: pointer;
+width:100px;
+text-align: center;
+align-items: center;
+justify-content: center;
+font-size: large;
+
+}
+table{
+width: 100%;
+}
+a{
+color: blue;
+font-size: large;
+display: block;
+text-align: center;
+margin: 10px;
+}
+</style>
+    </head>
+    <body>
+        <div class="sign-up">
+            <form action="signup_backend.php" method="POST"></form>
+                <form>
+                    <table>
+                        <tr>
+                            <td>user_name</td>
+                            <td><input type="text" name="user_name" placeholder="Enter user name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="text" name="Email" placeholder="Enter Email" required></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="password" placeholder="Enter password" required></td>
+                        </tr>
+                        <tr>
+                            <td>confirm-Password</td>
+                            <td><input type="password" name="confirm_password" placeholder="password" required></td>
+                        </tr>
+                    </table>
+                    <div class="up">
+                            <input type="submit" value="sign_up">
+                    </div>
+                </form>
+            <a href="login.html">Already have an account</a>
+        </div>
+    </body>
+</html>

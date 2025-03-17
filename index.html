@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=devivce-width, initial-scale=1.0">
+    <title>Cake Land Delights</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+        <h1 ><i>Cake Land Delights</i></h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+               <li><a href="#Home">Home</a></li>
+                <li><a href="#search">search</a></li>
+                <li><a href="signup.html">Account</a></li>
+                <li><a href="#ContactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="aboutus">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Cake Land Delights, your one-stop destination for delicious, freshly baked cakes! We specialize in crafting mouthwatering cakes for every occasion—birthdays, weddings, anniversaries, and more. Our expert bakers use the finest ingredients to ensure every bite is a delight.
+                Explore our wide range of flavors and designs, and place your order online for doorstep delivery. Let us add sweetness to your special moments!
+            </p>
+        </div>
+                
+    </div>
+    <div class="categoriesbar">
+        <ul>
+            <li><a href="#chocolate" target="_blank">chocolate</a></li>
+            <li> <a href="#vanilla" target="_blank">vanilla</a></li>
+            <li><a href="#red-velvet" target="_blank">red-velvet</a></li>
+            <li><a href="#strawberry" target="_blank">strawberry</a></li>
+        </ul>
+        <div class="searchbar">
+            <section id="search">
+                <input type="text" id="categorysearch" placeholder="search cakes">
+                <button onclick="searchcakes()">search</button>
+            </section> 
+        </div>
+    </div>
+        <script>
+            function searchcakes() {
+                let input = document.getElementById("categorysearch").value.toLowerCase();
+                let cakes = document.querySelectorAll(".cake div");
+    
+                cakes.forEach((cake) => {
+                    let text = cake.textContent.toLowerCase();
+                    cake.style.display = text.includes(input) ? "block" : "none";
+                });
+            }
+        </script>
+    <div class="Home">
+        <section id="Home">
+            <section id="chocolate">
+                <div class="cake chocolate" >
+                    <div class="c">
+                        <img src="img/c-1.jpg">
+                        <p>
+                                    Flavour:chocolate<br>
+                                    Price:Rs 3000<br>
+                                    Weight:2kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="c"> 
+                        <img src="img/c-2.jpg">
+                        <p>
+                                    Flavour:chocolate<br>
+                                    Price:Rs 2500<br>
+                                    Weight:1.5kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="c">
+                                <img src="img/c-3.jpg">
+                                <p>
+                                    Flavour:chocolate<br>
+                                    Price:Rs 3500<br>
+                                    Weight:3kg<br>
+                                </p>
+                                <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="c">
+                                <img src="img/c-4.jpg">
+                                <p>
+                                    Flavour:chocolate<br>
+                                    Price:Rs2000<br>
+                                    Weight:1.5 kg<br>
+                                </p>
+                                <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="c">
+                            <img src="img/c-5.jpg">
+                                <p>
+                                    Flavour:chocolate<br>
+                                    Price: Rs3000<br>
+                                    Weight:2.5kg <br>
+                                </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="c">
+                            <img src="img/c-7.jpg">
+                                <p>
+                                    Flavour:chocolate<br>
+                                    Price:Rs 4000<br>
+                                    Weight:3.5kg<br>
+                                </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="c">
+                            <img src="img/c-8.jpg">
+                                <p>
+                                    Flavour:chocolate<br>
+                                    Price:Rs 2000<br>
+                                    Weight:1.5kg<br>
+                                </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="c">
+                            <img src="img/c-9.jpg">
+                                <p>
+                                    Flavour:chocolate<br>
+                                    Price:Rs 3000<br>
+                                    Weight:2.5 kg<br>
+                                </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+            <section id="vanilla">
+                <div class="cake vanilla">
+                    <div class="v">
+                            <img src="img/v-1.jpg">
+                                <p>
+                                    Flavour:vanilla<br>
+                                    Price:3150<br>
+                                    Weight:3kg<br>
+                                </p>
+                                <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="v">
+                            <img src="img/v-2.jpg">
+                            <p>
+                                Flavour:vanilla<br>
+                                Price:Rs 2400<br>
+                                Weight:1kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="v">
+                            <img src="img/v-3.jpg">
+                            <p>
+                                Flavour:vanilla<br>
+                                Price:Rs 3500 <br>
+                                Weight:3kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="v">
+                            <img src="img/v-4.jpg">
+                            <p>
+                                Flavour:vanilla<br>
+                                Price:Rs 2200<br>
+                                Weight:1.4kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="v">
+                            <img src="img/v-5.jpg">
+                            <p>
+                                Flavour:vanilla<br>
+                                Price:Rs 1700<br>
+                                Weight:1kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="v">
+                            <img src="img/v-6.jpg">
+                            <p>
+                                Flavour:vanilla<br>
+                                Price:Rs 1800<br>
+                                Weight:1kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="v">
+                            <img src="img/v-8.jpg">
+                            <p>
+                                Flavour:vanilla<br>
+                                Price:Rs 4200<br>
+                                Weight:3.5kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="v">
+                            <img src="img/v-9.jpg">
+                            <p>
+                               Flavour:vanilla<br>
+                               Price:Rs 2700<br>
+                               Weight:2kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                </div>    
+            </section>
+            <section id="red-velvet">
+                <div class="cake red-velvet">
+                    <div class="r">
+                        <img src="img/r-1.jpg">
+                        <p>
+                                Flavour:red-velvet<br>
+                                Price:Rs 2000<br>
+                                Weight:1.5kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="r">
+                        <img src="img/r-2.jpg">
+                        <p>
+                                Flavour:red-velvet<br>
+                                Price:Rs 3000<br>
+                                Weight:3kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="r">
+                        <img src="img/r-3.jpg">
+                        <p>
+                               Flavour:red-velvet<br>
+                               Price:Rs 1500<br>
+                               Weight:1kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="r">
+                        <img src="img/r-4.jpg">
+                        <p>
+                               Flavour:red-velvet<br>
+                               Price:Rs 3500<br>
+                               Weight: 2.5kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="r">
+                        <img src="img/r-5.jpg">
+                        <p>
+                              Flavour:red-velvet<br>
+                              Price:Rs 2400<br>
+                              Weight:2kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="r">
+                        <img src="img/r-6.jpg">
+                        <p>
+                              Flavour:red-velvet<br>
+                              Price:Rs 2600<br>
+                              Weight:2kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="r">
+                        <img src="img/r-7.jpg">
+                        <p>
+                              Flavour:red-velvet<br>
+                              Price:Rs 3400<br>
+                              Weight:3.2kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="r">
+                        <img src="img/r-8.jpg">
+                        <p>
+                              Flavour:red-velvet<br>
+                              Price:Rs 2300<br>
+                              Weight:1.6kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+            <section id="strawberry">
+                <div class="cake strawberry">
+                    <div class="s">
+                        <img src="img/s-1.jpg">
+                        <p>
+                              Flavour:strawberry<br>
+                              Price:Rs 2500<br>
+                              Weight:2kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="s">
+                        <img src="img/s-2.jpg">
+                        <p>
+                                Flavour:strawberry<br>
+                                Price:Rs 1400<br>
+                                Weight:1kg<br>
+                        </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="s">
+                        <img src="img/s-3.jpg">
+                        <p>
+                            Flavour:strawberry<br>
+                            Price:Rs 4000<br>
+                            Weight: 3kg<br>
+                        </p>
+                        <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="s">
+                            <img src="img/s-4.jpg">
+                            <p>
+                                Flavour:strawberry<br>
+                                Price:Rs 1200<br>
+                                Weight:0.5kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="s">
+                            <img src="img/s-5.jpg">
+                            <p>
+                                Flavour:strawberry<br>
+                                Price:Rs 1400<br>
+                                Weight:0.5kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="s">
+                            <img src="img/s-6.jpg">
+                            <p>
+                                Flavour:strawberry<br>
+                                Price:Rs 3000<br>
+                                Weight:3kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="s">
+                            <img src="img/s-7.jpg">
+                            <p>
+                                Flavour:strawberry<br>
+                                Price:Rs 2400<br>
+                                Weight:2kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                    <div class="s">
+                            <img src="img/s-8.jpg">
+                            <p>
+                                Flavour:strawberry<br>
+                                Price:Rs 1500<br>
+                                Weight:1kg<br>
+                            </p>
+                            <button type="submit">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+        </section>    
+    </div>
+    <section id="ContactUs">
+        <div class="contact">
+            <h2>Contact Us</h2>
+                <p style="color: white;">Phone Number: 0773732566</p>
+                <p style="color: white;">Email: thavasingam@gmail.com </p>
+                <br>
+                <div class="instagram"> 
+                    <img src="img/instagram.jpg" style="height: 40px; width:40px;">
+                   </div>
+                <div class="facebook">
+                   <img src="img/facebook.jpg" style="height: 40px; width:40px;"></a>
+                </div>
+        </div>
+    </section>
+  
+</body>
+</html>
