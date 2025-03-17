@@ -7,13 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: bisque;
+    background-color: white;
     padding: 20px;
 }
 body{
-    background-image: url('img/bg1.jpg');
     padding: 15px;
-    background-color:azure;
+    background-color:white;
     background-size: cover;
 }
 .aboutus{
@@ -35,7 +34,7 @@ body{
     margin: 20px;
     max-width: 500px;
     padding: 30px ;
-    background: rgba(153, 147, 147, 0.5);
+    background: rgba(191, 188, 190, 0.5);
     color: white;
     max-width: 20%;
     border-radius: 10px;
@@ -43,16 +42,21 @@ body{
 
 .logo h1{ 
     font-size: 70px;
-    color: purple;
+    color: rgb(73, 174, 30);
     font-weight: bold;
 }
 .navbar{
-    background-color: silver;
+    background-color: white;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(17, 4, 4, 0.1);
+}
+.navbar:hover{
+    background-color: rgb(177, 247, 147);
+    color: white;
+    
 }
 .navbar ul{ 
     list-style: none;
@@ -67,10 +71,10 @@ body{
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: purple;
+    color: rgb(27, 50, 9);
 }
 .navbar ul li a:hover {
-    color: darkred;
+    color: rgb(248, 239, 239);
 }
 
 li:hover{
@@ -92,7 +96,7 @@ input{
     display: inline-block;
     width: 40%;
     padding: 10px;
-    border: solid lightblue 3px;
+    border: solid rgb(218, 230, 234) 3px;
 }
  
 .searchbar button{
@@ -106,14 +110,15 @@ input{
     transition: background-color 0.3s;
 }
 .searchbar button:hover{
-    background-color: beige;
+    background-color: white;
+    color: blueviolet;
 }
 
 
 button{
     font-size: large;
-    color: blueviolet;
-    background-color: bisque;
+    color: rgb(222, 61, 222);
+    background-color: white;
     border: 1px purple solid ;
     padding: 4px;
     margin-left: 70px;
@@ -122,7 +127,8 @@ button{
     transition: background-color 0.3s;
  }
  button:hover{
-    background-color: white;
+    color: white;
+    background-color: rgb(228, 50, 180);
  }
 .cake{
     
@@ -151,7 +157,7 @@ img{
     margin-top: 20px;
 }
 .categoriesbar{
-    background-color: bisque;
+    background-color: white;
     padding: 15px;
     margin: 40px ;
     display: flex;
@@ -211,25 +217,12 @@ img{
     color: purple;
  }
 
- .v:hover{
-    background-color: bisque;
+ 
+ .s:hover, .c:hover, .r:hover, .v:hover{
+    color: white;
+    background-color: rgb(247, 207, 247);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
- }
- .c:hover{
-    background-color: bisque;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
- }
- .s:hover{
-    background-color: bisque;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
- }
- .r:hover{
-    background-color: bisque;
-    cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
  }
  
  @media screen and (max-width:600px){
@@ -324,6 +317,3 @@ img{
  
 
  }
- 
-    
- 
